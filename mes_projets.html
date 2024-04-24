@@ -8,19 +8,26 @@
                 font-family: 'Arial', sans-serif;
                 margin: 0;
                 padding: 0;
-                background: <img src="shemas_projet_bts_gns3.png" alt="shemas_projet_bts_gns3" class="project-image">
+                background-image : url("reseau2.jpeg");
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
             }
     
             .header {
-                background-color: #333;
-                color: white;
+                
+                color: rgb(0, 0, 0);
                 text-align: center;
                 padding: 10px 0;
             }
             .jw-menu {
                 list-style: none;
                 overflow: hidden;
-                background-color: #ffffff;
+                background-color: #333;
                 margin: 0;
                 padding: 0;
             }
@@ -29,13 +36,13 @@
             }
             .jw-menu li a {
                 display: block;
-                color: rgb(2, 2, 2);
+                color: rgb(255, 255, 255);
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
             }
             .jw-menu li a:hover {
-                background-color: #8ca7c3;
+                background-color: #0a7cf7;
             }
             footer {
                 background-color: #333;
@@ -46,14 +53,12 @@
                 bottom: 0;
                 width: 100%;
             }
-    
             /* Ajoutez ici d'autres styles personnalisés si nécessaire */
         </style>
     </head>
     <body>
         <header class="header">
             <div class="header-content">
-                <img class="jw-mobile-logo" src="https://www.oo2.fr/sites/default/files/styles/large_16_9/public/images/administration_systeme_reseau_0.jpg?itok=xTPrsni-" alt="Stagiaire-EPNAK" style="width:1500px;height:500px;" title="Stagiaire-EPNAK">
                 <h1>Portfolio de DEVRIENDT Michael</h1>
                 <h1>2024</h1>
             </div>
@@ -69,25 +74,28 @@
             </ul>
         </header>
         </nav>
-        <main>
-            <!-- Contenu principal de la page -->
-            <h2>Projets</h2>
-            <!-- Détails des projets ici -->
-        </main>
     </body>
 <head>
-    <meta charset="UTF-8">
-    <title>Mes Projets - Stagiaire EPNAK</title>
     <style>
         /* Styles existants... */
 
         .project-section {
             margin-bottom: 20px;
+            background-color: #333;
+            color: white;
+           
+            padding: 10px 0;
+        }
+        .project-section h3{
+            margin-left: 10px;
         }
 
-        .project-image {
-            width: 40%;
-            height: auto;
+        .project-image img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            
         }
 
         .pdf-link, .pdf-iframe {
@@ -109,16 +117,19 @@
     </nav>
     <main>
         <section class="project-section">
-            <h3><u>Projet : MAGINOT</u></h3>
-            <img src="shemas_projet_bts_gns3.png" alt="shemas_projet_bts_gns3" class="project-image">
-
-            <h3><u>Cahier des charges :</u></h3>
+            <h3>Projet MAGINOT</h3>
+            <div class="project-image"><img src="shemas_projet_bts_gns3.png" alt="shemas_projet_bts_gns3"></div>
+            <h3>Cahier des charges</h3>
             <iframe src="CDC.pdf" class="pdf-iframe"></iframe>
             <p class="pdf-link">Si votre navigateur ne supporte pas les fichiers PDF ? vous pouvez telecharger le cahier des charges <a href="CDC.pdf">ici</a>.</p>
         </section>
     </main>
     <footer>
-        © 2023 Stagiaire EPNAK - Tous droits réservés
+        <p>Contact
+        <br>LinkedIN : 
+        <br>Mail :     
+        </p>
+                © 2023 Stagiaire EPNAK - Tous droits réservés
     </footer>
 </body>
 </html>
