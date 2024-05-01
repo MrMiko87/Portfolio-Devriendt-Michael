@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <title>Veille Technologique - Stagiaire EPNAK</title>
     <style>
+        h2 {
+            color: rgb(13, 226, 13);   
+        }
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to top, #ffffff, #94b0c6); /* Dégradé du blanc au gris */
+            margin-bottom: 20px;
+            background-image : url("reseau2.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         .header {
-            background-color: #333;
-            color: white;
+            color: rgb(0, 0, 0);
             text-align: center;
             padding: 10px 0;
         }
         .jw-menu {
             list-style: none;
             overflow: hidden;
-            background-color: #ffffff;
+            background-color: #333333cb;
             margin: 0;
             padding: 0;
         }
@@ -29,26 +39,68 @@
         }
         .jw-menu li a {
             display: block;
-            color: rgb(2, 2, 2);
+            color: rgb(255, 255, 255);
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
         .jw-menu li a:hover {
-            background-color: #8ca7c3;
+            background-color: #39f70ab4;
         }
         main {
+            background-color: #131313cb;
             padding: 20px;
+            color: rgb(255, 255, 255);
         }
-
-        footer {
-            background-color: #333;
-            color: white;
+        /*---------------------- Footer ----------------------*/
+        footer::before{
+            position: sticky;
+        }
+        footer::before{
+            position: sticky;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: #333333cb;
+            color: rgb(255, 255, 255);
             text-align: center;
-            padding: 10px 0;
-            position: relative;
+            padding: 0;
+            padding-top: 1rem;
             bottom: 0;
             width: 100%;
+        }
+        .gridFooter{
+            color: rgb(255, 255, 255);
+        }
+        .gridFooter ul{
+            display: grid;
+            color: rgb(255, 255, 255);
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-rows: 1fr;
+            justify-items: center;
+            justify-content: space-between;
+        }
+        .gridFooter li{
+            list-style: none;
+            text-align: center;
+        }
+        .gridFooter img{
+            height: 25px;
+        }
+        .gridFooter a{
+            color: var(--Background);
+            text-decoration:none;
+        }
+        .gridFooter a:link{
+            color: var(--Background);
+            text-decoration:none;
+        }
+        .gridFooter a:visited{
+            color: var(--Background);
+            text-decoration:none;
         }
 
         .veille-techno {
@@ -83,7 +135,6 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <img class="jw-mobile-logo" src="https://www.oo2.fr/sites/default/files/styles/large_16_9/public/images/administration_systeme_reseau_0.jpg?itok=xTPrsni-" alt="Stagiaire-EPNAK" style="width:1500px;height:500px;" title="Stagiaire-EPNAK">
             <h1>Portfolio de DEVRIENDT Michael</h1>
             <h1>2024</h1>
         </div>
@@ -95,13 +146,14 @@
             <li><a href="CV et Parcours.html">CV et Parcours</a></li>
             <li><a href="mes_experiences.html">Mes Expériences</a></li>
             <li><a href="mes_projets.html">Mes Projets</a></li>
-            <li><a href="veille technologique .html">veille technologique</a></li>
+            <li><a href="veille technologique .html">Veille technologique</a></li>
         </ul>
+        <br>
     </header>
     </nav>
     <main>
         <div class="veille-techno">
-            <h2>Veille Technologique en Cybersécurité et Réseau Informatique</h2>
+            <h2><u>Veille Technologique en Cybersécurité et Réseau Informatique</u></h2>
             <p>Restez à jour avec les dernières nouveautés en cybersécurité et réseau informatique :</p>
             
             <ul>
@@ -111,8 +163,16 @@
             </ul>
         </div>
     </main>
-    <footer>
-        © 2023 Stagiaire EPNAK - Tous droits réservés
+    <br>
+    <footer class="footer">
+        BTS SIO SISR - Session 2024<br><br>Contact
+        <div class="gridFooter">
+            <ul>
+                <p><li>mail:<br><a href="mailto:devriendt_michael@hotmail.com"><img src="mail.png" alt="" srcset=""><br>devriendt_michael@hotmail.com</a></li>
+                <li>LinkedIn:<br><a href="https://www.linkedin.com/in/mika-dev-2b590514b/" target="_blank" rel="noopener noreferrer"><img src="LinkedIn.png" alt="" srcset=""><br>LinkedIn</a></li>
+                <li>GitHub:<br><a href="https://github.com/MrMiko87/Portfolio-Devriendt-Michael" target="_blank" rel="noopener noreferrer"><img src="gitHub.png" alt="" srcset=""><br>git</a></li></p>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

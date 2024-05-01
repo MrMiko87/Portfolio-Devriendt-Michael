@@ -5,15 +5,24 @@
     <meta itemprop="url" content="https://www.stagiaire-epnak.fr/">
     <title>Portfolio de DEVRIENDT michaël</title>
     <style>
+        h2 {
+            color: rgb(13, 226, 13);   
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to top, #ffffff, #94b0c6); /* Dégradé */
-            line-height: 1.6;
+            margin-bottom: 20px;
+            background-image : url("reseau2.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         .header {
-            /*background-color: #b3b4b5;*/
             color: #000000;
             padding: 10px 0;
             text-align: center;
@@ -21,7 +30,7 @@
         .jw-menu {
             list-style: none;
             overflow: hidden;
-            background-color: #ffffff;
+            background-color: #333333cb;
             margin: 0;
             padding: 0;
         }
@@ -30,35 +39,74 @@
         }
         .jw-menu li a {
             display: block;
-            color: rgb(2, 2, 2);
+            color: rgb(255, 255, 255);
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
         .jw-menu li a:hover {
-            background-color: #8ca7c3;
+            background-color: #39f70ab4;
         }
         .intro-section, .achievements-section {
             padding: 20px;
             text-align: center;
+            background-color: #131313cb;
+            color: rgb(255, 255, 255);
         }
-        footer {
-            background-color: #ffffff;
-            color: rgb(0, 0, 0);
+        /*---------------------- Footer ----------------------*/
+        footer::before{
+            position: sticky;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: #333333cb;
+            color: rgb(255, 255, 255);
             text-align: center;
-            padding: 10px 0;
-            position: relative;
+            padding: 0;
+            padding-top: 1rem;
             bottom: 0;
             width: 100%;
+        }
+        .gridFooter{
+            color: rgb(255, 255, 255);
+        }
+        .gridFooter ul{
+            display: grid;
+            color: rgb(255, 255, 255);
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-rows: 1fr;
+            justify-items: center;
+            justify-content: space-between;
+        }
+        .gridFooter li{
+            list-style: none;
+            text-align: center;
+        }
+        .gridFooter img{
+            height: 25px;
+        }
+        .gridFooter a{
+            color: var(--Background);
+            text-decoration:none;
+        }
+        .gridFooter a:link{
+            color: var(--Background);
+            text-decoration:none;
+        }
+        .gridFooter a:visited{
+            color: var(--Background);
+            text-decoration:none;
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="header-content">
-            <img class="jw-mobile-logo" src="https://www.oo2.fr/sites/default/files/styles/large_16_9/public/images/administration_systeme_reseau_0.jpg?itok=xTPrsni-" alt="Stagiaire-EPNAK" style="width:1500px;height:500px;" title="Stagiaire-EPNAK">
-            <h1>Portfolio de DEVRIENDT Michael</h1>
-            <h1>2024</h1>
+            <h2><u>Portfolio de DEVRIENDT Michael</u></h2>
+            <h2>2024</h2>
         </div>
         <!-- Navigation Menu -->
        <!-- Entête avec logo et menu de navigation -->
@@ -68,24 +116,30 @@
             <li><a href="CV et Parcours.html">CV et Parcours</a></li>
             <li><a href="mes_experiences.html">Mes Expériences</a></li>
             <li><a href="mes_projets.html">Mes Projets</a></li>
-            <li><a href="veille technologique .html">veille technologique</a></li>
+            <li><a href="veille technologique .html">Veille technologique</a></li>
         </ul>
+        <br>
     <main>
         <!-- Main Content -->
         <div class="intro-section">
-            <h2>Bienvenue sur le portfolio de DEVRIENDT Michael</h2>
-            <p>Ici, vous trouverez des informations sur mes compétences et expériences professionnelles acquises durant ma formation à L'ESRP EPNAK de Roubaix. Ma formation à commencé en 2020 par un baccalauréat SEN (Système et environnement numerique) option RISC (Réseau informatique et Système communicants) que j'ai obtenu en 2022. Toujours à l'ESRP EPNAK, j'ai pousuivi mon parcours de formation en 2022 avec un BTS SIO (Service Informatique aux Organisation) option SISR (Solution d'Infrastructure Système et Réseau) que je compte obtenir en 2024. Durant cette periode j'ai pu decouvrir et comprendre le fonction d'une infrastructure réseau mais également le mettre en pratique sur du materiel physique ou encore au travers de logiciels de simulation et de virtualisation tels que VMWare, Cisco Packet Tracer ou encore GNS3. J'ai pu également passer des certifications CISCO comme Routing & Switching et Network Essential mais aussi celle proposée par l'ANSI.
+            <h2><u>Bienvenue sur le portfolio de DEVRIENDT Michael</u></h2>
+            <p>Ici, vous trouverez des informations sur mes compétences et expériences professionnelles acquises durant ma formation à L'ESRP EPNAK de Roubaix. Ma formation à commencé en 2020 par un baccalauréat professionnel SEN (Système et environnement numerique) option RISC (Réseau informatique et Système communicants) que j'ai obtenu en 2022. Toujours à l'ESRP EPNAK, j'ai pousuivi mon parcours de formation en 2022 avec un BTS SIO (Service Informatique aux Organisation) option SISR (Solution d'Infrastructure Système et Réseau) que je compte obtenir en 2024. Durant cette periode j'ai pu decouvrir et comprendre le fonction d'une infrastructure réseau mais également le mettre en pratique sur du materiel physique ou encore au travers de logiciels de simulation et de virtualisation tels que VMWare, Cisco Packet Tracer ou encore GNS3. J'ai pu également passer des certifications CISCO comme Routing & Switching et Network Essential mais aussi celle proposée par l'ANSI.
         </div>
         <div class="achievements-section">
-            <h2>Mes Réalisations</h2>
-            <p>Vous trouverez <a href=http://127.0.0.1:5500/mes_projets.html>ici</a> quelques exemples de mes projets et réalisations personelles.</p>
+            <h2><u>Mes Réalisations</u></h2>
+            <p>Vous trouverez <a href=http://127.0.0.1:5500/mes_projets.html>ici</a> mon projet ainsi que le cahier des charges associé que j'ai réalisé durant mes 2 années de BTS</p>
         </div>
         <!-- Replace with appropriate image URL -->
-        <img src="https://formation.epnak.org/wp-content/uploads/2019/04/pngPlan-de-travail-11x.png" alt="Stagiaire EPNAK" style="width:5%;height:auto;">
     </main>
-    <footer>
-        <div class="footer-content">
-            © 2023 Stagiaire EPNAK - Tous droits réservés
+    <br>
+    <footer class="footer">
+        BTS SIO SISR - Session 2024<br><br>Contact
+        <div class="gridFooter">
+            <ul>
+                <li>mail:<br><a href="mailto:devriendt_michael@hotmail.com"><img src="mail.png" alt="" srcset=""><br>devriendt_michael@hotmail.com</a></li>
+                <li>LinkedIn:<br><a href="https://www.linkedin.com/in/mika-dev-2b590514b/" target="_blank" rel="noopener noreferrer"><img src="LinkedIn.png" alt="" srcset=""><br>LinkedIn</a></li>
+                <li>GitHub:<br><a href="https://github.com/MrMiko87/Portfolio-Devriendt-Michael" target="_blank" rel="noopener noreferrer"><img src="gitHub.png" alt="" srcset=""><br>git</a></li>
+            </ul>
         </div>
     </footer>
 </body>

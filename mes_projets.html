@@ -8,7 +8,7 @@
                 font-family: 'Arial', sans-serif;
                 margin: 0;
                 padding: 0;
-                background-image : url("reseau2.jpeg");
+                background-image : url("reseau2.jpg");
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -27,7 +27,7 @@
             .jw-menu {
                 list-style: none;
                 overflow: hidden;
-                background-color: #333;
+                background-color: #333333cb;
                 margin: 0;
                 padding: 0;
             }
@@ -42,17 +42,67 @@
                 text-decoration: none;
             }
             .jw-menu li a:hover {
-                background-color: #0a7cf7;
+                background-color: #39f70ab4;
             }
-            footer {
-                background-color: #333;
-                color: white;
-                text-align: center;
-                padding: 10px 0;
+            main {
+                padding: 20px;
+                color: rgb(255, 255, 255);
+                text-indent: 3%;
                 position: relative;
+                background-color: #131313cb;
+             
+            }
+            /*---------------------- Footer ----------------------*/
+            footer::before{
+                position: sticky;
+            }
+            footer::before{
+                position: sticky;
+            }
+            .footer{
+                grid-area: footer;
+                background-color: #333333cb;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 0;
+                padding-top: 1rem;
                 bottom: 0;
                 width: 100%;
             }
+            .gridFooter{
+                color: rgb(255, 255, 255);
+            }
+            .gridFooter ul{
+                display: grid;
+                color: rgb(255, 255, 255);
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-template-rows: 1fr;
+                justify-items: center;
+                justify-content: space-between;
+            }
+            .gridFooter li{
+                list-style: none;
+                text-align: center;
+            }
+            .gridFooter img{
+                height: 25px;
+            }
+            .gridFooter a{
+                color: var(--Background);
+                text-decoration:none;
+            }
+            .gridFooter a:link{
+                color: var(--Background);
+                text-decoration:none;
+            }
+            .gridFooter a:visited{
+                color: var(--Background);
+                text-decoration:none;
+            }
+           
             /* Ajoutez ici d'autres styles personnalisés si nécessaire */
         </style>
     </head>
@@ -81,9 +131,8 @@
 
         .project-section {
             margin-bottom: 20px;
-            background-color: #333;
+            background-color: #333333cb;
             color: white;
-           
             padding: 10px 0;
         }
         .project-section h3{
@@ -119,17 +168,25 @@
         <section class="project-section">
             <h3>Projet MAGINOT</h3>
             <div class="project-image"><img src="shemas_projet_bts_gns3.png" alt="shemas_projet_bts_gns3"></div>
+        </section>
+    </main>
+    <main>
+        <section class="project-section">
             <h3>Cahier des charges</h3>
             <iframe src="CDC.pdf" class="pdf-iframe"></iframe>
             <p class="pdf-link">Si votre navigateur ne supporte pas les fichiers PDF ? vous pouvez telecharger le cahier des charges <a href="CDC.pdf">ici</a>.</p>
         </section>
     </main>
-    <footer>
-        <p>Contact
-        <br>LinkedIN : 
-        <br>Mail :     
-        </p>
-                © 2023 Stagiaire EPNAK - Tous droits réservés
+    <br>
+    <footer class="footer">
+        BTS SIO SISR - Session 2024<br><br>Contact
+        <div class="gridFooter">
+            <ul>
+                <li>mail:<br><a href="mailto:devriendt_michael@hotmail.com"><img src="mail.png" alt="" srcset=""><br>devriendt_michael@hotmail.com</a></li>
+                <li>LinkedIn:<br><a href="https://www.linkedin.com/in/mika-dev-2b590514b/" target="_blank" rel="noopener noreferrer"><img src="LinkedIn.png" alt="" srcset=""><br>LinkedIn</a></li>
+                <li>GitHub:<br><a href="https://github.com/MrMiko87/Portfolio-Devriendt-Michael" target="_blank" rel="noopener noreferrer"><img src="gitHub.png" alt="" srcset=""><br>git</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
